@@ -23,7 +23,7 @@ const Product = ({image, title, type, linkLabel}: IProduct) => {
       width={isHorizontal ? CARD_WIDTH * 2 + sizes.sm : CARD_WIDTH}>
       <Image
         resizeMode="cover"
-        source={{uri: image}}
+        source={image}
         style={{
           height: isHorizontal ? 114 : 110,
           width: !isHorizontal ? '100%' : sizes.width / 2.435,
