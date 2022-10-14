@@ -478,6 +478,8 @@ export interface IImageProps extends ImageProps, ISpacing {
    * id for testID & accesibilityLabel
    */
   id?: string;
+  width:number;
+  height:number;
   /**
    * Avatar sizing: borderRadius from Math.min(height, weight)
    * sets the width & height to Math.min(height, weight)

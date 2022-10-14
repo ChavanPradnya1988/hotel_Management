@@ -16,27 +16,28 @@ export default () => {
 
       <Stack.Screen
         name="Menu"
-        component={Components}
-        options={screenOptions.components}
+        component={Articles}
+        options={{title: t('navigation.articles')}}
       />
 
       <Stack.Screen
         name="Cart"
-        component={Articles}
-        options={{title: t('navigation.articles')}}
+        component={Components}
+        
+        options={screenOptions.components}
       />
 
       <Stack.Screen name="Pro" component={Pro} options={screenOptions.pro} />
 
       <Stack.Screen
         name="Order"
-        component={Profile}
+        component={Register}
         options={{headerShown: false}}
       />
 
       <Stack.Screen
         name="Profile"
-        component={Register}
+        component={Profile}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

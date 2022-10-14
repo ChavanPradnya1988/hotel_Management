@@ -10,7 +10,7 @@ import {
   IProduct,
   IUser,
 } from './types';
-import HaidrabadiBiryani from '../../assets/HaidrabadiBiryani.jpeg';
+
 
 // users
 export const USERS: IUser[] = [
@@ -163,10 +163,10 @@ export const TRENDING: IProduct[] = [
 
 // categories
 export const CATEGORIES: ICategory[] = [
-  {id: 1, name: 'Popular'},
-  {id: 2, name: 'Newest'},
-  {id: 3, name: 'Fashion'},
-  {id: 4, name: 'Best deal'},
+  {id: 1, name: 'Veg'},
+  {id: 2, name: 'NonVeg'},
+  {id: 3, name: 'Snacks'},
+  {id: 4, name: 'Drinks'},
 ];
 
 // article options
