@@ -10,6 +10,7 @@ const isAndroid = Platform.OS === 'android';
 
 const Profile = () => {
   const {user} = useData();
+  console.log("user",user)
   const {t} = useTranslation();
   const navigation = useNavigation();
   const {assets, colors, sizes} = useTheme();
@@ -51,7 +52,9 @@ const Profile = () => {
             padding={sizes.sm}
             paddingBottom={sizes.l}
             radius={sizes.cardRadius}
-            source={assets.background}>
+            source={assets.background} 
+            width={0}
+             height={0}>
             <Button
               row
               flex={0}
@@ -193,8 +196,8 @@ const Profile = () => {
                 style={{
                   width: IMAGE_VERTICAL_SIZE + IMAGE_MARGIN / 2,
                   height: IMAGE_VERTICAL_SIZE * 2 + IMAGE_VERTICAL_MARGIN,
-                }}
-              />
+                }} width={0} 
+                height={0}              />
               <Block marginLeft={sizes.m}>
                 <Image
                   resizeMode="cover"
@@ -203,16 +206,14 @@ const Profile = () => {
                   style={{
                     height: IMAGE_VERTICAL_SIZE,
                     width: IMAGE_VERTICAL_SIZE,
-                  }}
-                />
+                  }} width={0} height={0}                />
                 <Image
                   resizeMode="cover"
                   source={assets?.photo3}
                   style={{
                     height: IMAGE_VERTICAL_SIZE,
                     width: IMAGE_VERTICAL_SIZE,
-                  }}
-                />
+                  }} width={0} height={0}                />
               </Block>
             </Block>
           </Block>

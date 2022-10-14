@@ -16,8 +16,8 @@ import {
 export const USERS: IUser[] = [
   {
     id: 1,
-    name: 'Devin Coldewey',
-    department: 'Marketing Manager',
+    name: 'Shailesh Shende',
+    department: 'Owner',
     stats: {posts: 323, followers: 53200, following: 749000},
     social: {twitter: 'CreativeTim', dribbble: 'creativetim'},
     about:
