@@ -66,14 +66,14 @@ const Articles = () => {
         </Block>
       </Block>
 
-      <FlatList
+      {/* <FlatList
         data={articles}
         showsVerticalScrollIndicator={false}
         keyExtractor={(item) => `${item?.id}`}
         style={{paddingHorizontal: sizes.padding}}
         contentContainerStyle={{paddingBottom: sizes.l}}
         renderItem={({item}) => <Article {...item} />}
-      />
+      /> */}
     </Block>
   );
 };

@@ -65,7 +65,8 @@ const Register = () => {
 
   return (
     <Block safe marginTop={sizes.md}>
-      <Block paddingHorizontal={sizes.s}>
+      <Text>Order</Text>
+      {/* <Block paddingHorizontal={sizes.s}>
         <Block flex={0} style={{zIndex: 0}}>
           <Image
             background
@@ -98,7 +99,7 @@ const Register = () => {
           </Image>
         </Block>
         {/* register form */}
-        <Block
+      {/* <Block
           keyboard
           behavior={!isAndroid ? 'padding' : 'height'}
           marginTop={-(sizes.height * 0.2 - sizes.l)}>
@@ -119,9 +120,9 @@ const Register = () => {
               paddingVertical={sizes.sm}>
               <Text p semibold center>
                 {t('register.subtitle')}
-              </Text>
-              {/* social buttons */}
-              <Block row center justify="space-evenly" marginVertical={sizes.m}>
+              </Text> */}
+      {/* social buttons */}
+      {/* <Block row center justify="space-evenly" marginVertical={sizes.m}>
                 <Button outlined gray shadow={!isAndroid}>
                   <Image
                     source={assets.facebook}
@@ -173,9 +174,9 @@ const Register = () => {
                   start={[1, 0]}
                   gradient={gradients.divider}
                 />
-              </Block>
-              {/* form inputs */}
-              <Block paddingHorizontal={sizes.sm}>
+              </Block> */}
+      {/* form inputs */}
+      {/* <Block paddingHorizontal={sizes.sm}>
                 <Input
                   autoCapitalize="none"
                   marginBottom={sizes.m}
@@ -205,9 +206,9 @@ const Register = () => {
                   success={Boolean(registration.password && isValid.password)}
                   danger={Boolean(registration.password && !isValid.password)}
                 />
-              </Block>
-              {/* checkbox terms */}
-              <Block row flex={0} align="center" paddingHorizontal={sizes.sm}>
+              </Block> */}
+      {/* checkbox terms */}
+      {/* <Block row flex={0} align="center" paddingHorizontal={sizes.sm}>
                 <Checkbox
                   marginRight={sizes.sm}
                   checked={registration?.agreed}
@@ -248,7 +249,7 @@ const Register = () => {
             </Block>
           </Block>
         </Block>
-      </Block>
+      </Block>  */}
     </Block>
   );
 };
